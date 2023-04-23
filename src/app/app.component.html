@@ -1,0 +1,19 @@
+<button [tooltip]="'Awesome tooltip with text content'">Text</button>
+<button [tooltip]="templateImageTooltip">Image</button>
+<button
+  [tooltip]="templateComponentTooltip"
+  [tooltipPosition]="
+    isSmallScreen ? TooltipPosition.TOP : TooltipPosition.BOTTOM
+  "
+>
+  Component
+</button>
+
+<ng-template #templateImageTooltip>
+  <img src="assets/images/tooltip-image.jpg" />
+</ng-template>
+
+<ng-template #templateComponentTooltip>
+  <div>You can open all tooltips with following hotkeys</div>
+  <app-hotkey [hotkeys]="showAllTooltipsHotkey" />
+</ng-template>

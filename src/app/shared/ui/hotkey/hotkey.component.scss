@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  div {
+    padding: 2px 5px;
+    background-color: #282828;
+    color: #fff;
+    margin: 2px;
+    border-radius: 2px;
+    text-transform: capitalize;
+  }
+}

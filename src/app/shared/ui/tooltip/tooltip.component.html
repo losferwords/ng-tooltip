@@ -1,0 +1,11 @@
+<div
+  class="tooltip"
+  [style.left]="left + 'px'"
+  [style.top]="top + 'px'"
+  [ngClass]="['position-' + position]"
+>
+  <ng-container *ngIf="tooltipText">{{ tooltipText }}</ng-container>
+  <ng-container *ngIf="tooltipTemplate"
+    ><ng-container *ngTemplateOutlet="tooltipTemplate"></ng-container
+  ></ng-container>
+</div>
