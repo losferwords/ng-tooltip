@@ -2,6 +2,10 @@
 
 This is the Test Project with Angular Tooltip Component Example
 
+## Demo
+
+[Try it](https://losferwords.github.io/ng-tooltip/ng-tooltip)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
