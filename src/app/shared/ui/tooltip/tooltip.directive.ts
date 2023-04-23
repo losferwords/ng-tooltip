@@ -37,7 +37,13 @@ export class TooltipDirective {
     const hotkeysForTooltip = new Set(Hotkeys.showAllTooltips);
     const pressedKeys = new Set<string>();
 
-    pressedKeys.add(event.key.toLowerCase());
+    let code = event.code;
+
+    if (code.slice(0, -1) === 'Key') {
+      code = code.slice(-1).toLowerCase();
+    }
+
+    pressedKeys.add(code);
     if (hotkeysForTooltip.has(FunctionalKeys.SHIFT) && event.shiftKey) {
       pressedKeys.add(FunctionalKeys.SHIFT);
     }

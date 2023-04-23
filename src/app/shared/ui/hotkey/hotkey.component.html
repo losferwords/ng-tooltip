@@ -1,9 +1,9 @@
 <div *ngFor="let hotkey of hotkeys">
-    <ng-container [ngSwitch]="hotkey">
-        <ng-container *ngSwitchCase="'shift'">⇧ Shift</ng-container>
-        <ng-container *ngSwitchCase="'alt'">Alt</ng-container>
-        <ng-container *ngSwitchCase="'cmd'">⌘</ng-container>
-        <ng-container *ngSwitchCase="'ctrl'">Ctrl</ng-container>
-        <ng-container *ngSwitchDefault>{{ hotkey }}</ng-container>
-    </ng-container>    
+  <ng-container [ngSwitch]="hotkey">
+    <ng-container *ngSwitchCase="'shift'">⇧ Shift</ng-container>
+    <ng-container *ngSwitchCase="'alt'">Alt</ng-container>
+    <ng-container *ngSwitchCase="'cmd'">⌘</ng-container>
+    <ng-container *ngSwitchCase="'ctrl'">Ctrl</ng-container>
+    <ng-container *ngSwitchDefault>{{ hotkey }}</ng-container>
+  </ng-container>
 </div>
